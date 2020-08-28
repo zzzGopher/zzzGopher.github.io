@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*header is top main flex box*/
+#header{
+
+    display: flex;
+flex-direction: row;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+height: 9em;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: rgb(226, 220, 220);
+
+}
+
+/*top left flex container*/
+
+#logoflexbox{
+
+	display: flex;
+    flex-direction: row;
+    width: 92px;
+    height: 36px;
+    justify-self: center;
+    padding: 4px 28px 0px 24px;
+    margin-top: 21px;
+    margin-left: .1%;
+    
+}
+
+ .search-box:hover {
+
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+border-color: rgba(223,225,229,0);
+border-radius: 24px;
+ }
+ 
+
+img{
+
+display: inline-block;
+
+}
+
+.searchboxflex{
+
+	
+	display: flex;
+align-self: center;
+width: 690px;
+height: 44px;
+border: 1px solid #dfe1e5;
+background: #fff;
+border: 1px solid #dfe1e5;
+box-shadow: none;
+border-radius: 24px;
+margin-left: .5%;
+position: relative;
+margin-bottom: 2.9%;
+margin-top: 1.5rem;
+	}
+
+
+
+.search-box{
+
+	
+	display: flex;
+width: 100%;
+height: 100%;
+border: none;
+background: transparent;
+position: absolute;
+padding-left: 50px;
+	
+}
+
+.buttons-flex-container{
+    width: 20%;
+display: flex;
+z-index: 2;
+height: inherit;
+margin-left: 80%;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+.x-button{
+    height: 20px;
+    width: 20px;
+    filter: invert(53%) sepia(7%) saturate(340%) hue-rotate(166deg) brightness(98%) contrast(82%);
+    padding-left: 50px;
+    line-height: 24px;
+}
+
+.search-button{
+    height: 17px;
+    width: 17px;
+    line-height: 24px;
+}
+/*Toolbar icons flex container*/
+
+
+#toolbar-icons-flex-box{
+
+
+    display: flex;
+height: 3rem;
+width: 50rem;
+position: static;
+margin-left: 0px;
+position: absolute;
+margin-right: 75%;
+margin-top: 25%;
+}
+
+@media only screen and (max-width: 997px)  {
+    #toolbar-icons-flex-box{
+
+
+
+margin-top: 25%;
+scale: 100%;
+position: absolute;
+margin-left: 3%;
+width: 47em;
+height: 3em;
+    }
+    .sign-in-button{
+        scale: 90%;
+        flex-grow: 1;
+        height: 100%;       
+    }
+    .sign-in-text{
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+}
+
+.search-icon-img{
+
+    display: inline-block;
+    width: 1.9%;
+    height: 30%;
+margin-top: 2px;
+position: relative;
+margin-left: 75px;
+
+}
+
+h1, .more-dropdown-btn{
+    line-height: 150%;
+padding-left: 5px;
+font-size: 13px;
+position: inherit;
+color: rgb(127, 135, 144);
+}
+.more-dropdown-btn{
+    position: relative;
+    display: inline-block;
+    border: none;
+    background: inherit;
+
+}
+
+.dropstyle{
+
+    color: black;
+width: 8em;
+height: 150px;
+display: none;
+background: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+outline: none;
+padding: 5px 0;
+position: absolute;
+margin-left: -83%;
+margin-top: 20%;
+
+}
+
+.more-dropdown-btn:focus .dropstyle{
+
+display: block;
+visibility: visible;
+}
+
+.dropdown-content{
+
+font-size: 15px;
+font-family: sans-serif;
+
+
+}
+
+.dropdown-imgs{
+
+    display: inline-block;
+height: 23px;
+width: 23px;
+position: relative;
+margin-left: -60%;
+
+}
+
+
+
+
+
+.maps-icon-img, .videos-icon-img, .news-icon-img, .shopping-icon-img, .more-icon-img {
+
+    width: 1.9%;
+    height: 30%;
+    padding-left: 20px;
+    margin-top: 2px;
+    position: relative;
+    color: #7f8790;
+    
+    
+}
+
+h2{
+    font-size: 14px;
+position: relative;
+padding-left: 25px;
+margin-top: -22px;
+
+}
+
+
+a{
+text-decoration: none;
+
+}
+
+
+
+/*  Top Right Flex box container */
+
+#flex-container-right{
+
+    display: flex;
+width: 15%;
+height: 35%;
+align-items: center;
+justify-items: center;
+justify-content: end;
+align-content: space-evenly;
+position: relative;
+margin-left: inherit;
+padding-right: 50px;
+margin-top: 1%;
+min-width: 160px;
+}
+
+.app-square{
+
+	
+    height: 24px;
+width: 24px;
+margin-right: 20px;
+position: relative;
+display: flex;
+background-size: 150%;
+padding: 8px;
+border-radius: 80%;
+
+}
+
+.app-square:hover{
+    background-color: rgba(60,64,67,0.08);
+    opacity: 1;
+    
+}
+
+.sign-in-button{
+
+    width: inherit;
+    height: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 23px 9px 23px;
+    text-align: center;
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+    border-radius: 4px;
+    line-height: 19px;
+    white-space: nowrap;
+    min-width: 30%;
+}
+
+.sign-in-button:hover{
+
+    background: #2b7de9;
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+
+}
+
+
+.results-grid{
+    display: grid;
+width: 100%;
+height: 3rem;
+}
+.results{
+
+    line-height: 150%;
+padding-left: 5px;
+font-size: 80%;
+align-self: center;
+margin-left: 8%;
+color: rgb(127, 135, 144);
+}
+
+/* Body Grid */
+
+.body-grid{
+
+    display: grid;
+width: 1280px;
+height: 2560px;
+
+}
+
+.grid-container-body{
+
+    width: 652px;
+height: 2614px;
+margin-left: 180px;
+margin-right: 264px;
+display: grid;
+grid-template-rows:  repeat(auto-fill, minmax(8rem, 1fr));
+grid-gap: 10px;
+justify-items: center;
+position: relative;
+
+}
+
+.grid-anchors{
+
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+.grid-mini-anchors{
+
+    color: #7f8790;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 20px;
+}
+
+h3{
+    color: #4d5156;
+    font-size: 14px;
+line-height: 18px;
+}
+
+.video-box{
+display: flex;
+flex-direction: row;
+width: 100%;
+position: relative;
+align-content: stretch;
+
+}
+
+.vidgrid{
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+h4{
+    z-index: 10;
+    height: 10%;
+    grid-row: 3;
+}
